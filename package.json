@@ -1,0 +1,16 @@
+{
+    "name": "jsprueba",
+    "version": "0.0.1",
+    "description": "algorismo",
+    "main": "game.js",
+    "devDependencies": {},
+    "scripts": {
+      "start": "node game.js"
+    },
+    "keywords": [
+      "nodejs",
+      "algorismo"
+    ],
+    "author": "nestor",
+    "license": "ISC"
+}
