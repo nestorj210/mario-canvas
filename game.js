@@ -1,19 +1,19 @@
 //-----------------------------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?-----------------------------?
-var bloques=/*0*/[[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 1*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 2*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 3*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 4*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 5*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,0 ,0 ,1],
-            /* 6*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 7*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 8*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /* 9*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2 ,0 ,0 ,0 ,1 ,2 ,1 ,2 ,1 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,2 ,1 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /*10*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /*11*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /*12*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1],
-            /*13*/[7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,12,0 ,0 ,11,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,12,0 ,0 ,0 ,0 ,1],
-            /*14*/[15,16,15,15,15,16,15,15,16,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,15,16,16,15,15,15,15,15,15,16,14,0 ,0 ,13,15,15,16,15,15,15,15,16,16,15,15,15,15,14,0 ,0 ,0 ,0 ,1]
+var bloques=/*0*/[[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 1*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 2*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 3*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 4*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 5*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,1 ,0 ,0 ,2],
+            /* 6*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 7*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 8*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /* 9*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2 ,0 ,0 ,0 ,1 ,2 ,1 ,2 ,1 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,1 ,2 ,1 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /*10*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /*11*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,3 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /*12*/[0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,5 ,6 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2],
+            /*13*/[7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,12,0 ,0 ,11,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,8 ,9 ,10,7 ,12,0 ,0 ,0 ,0 ,2],
+            /*14*/[15,16,15,15,15,16,15,15,16,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,16,16,15,15,15,15,15,16,15,15,15,15,16,16,15,15,15,15,15,15,16,14,0 ,0 ,13,15,15,16,15,15,15,15,16,16,15,15,15,15,14,0 ,0 ,0 ,0 ,2]
 ];
 var buttonD=false;
 var buttonI=false;
@@ -28,6 +28,7 @@ var aumentar=false;
 var saltar=false;
 var derecha=true;
 var pared=false;
+var stop =true;
 //--------------------------Canvas----------------------//
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -52,35 +53,27 @@ function mandos(e){
     }else if(e.keyCode==39){//derecha
         buttonD=true;
         buttonI=false;
-        /*console.log( "caminata",caminata
-             ,"camMax",camMax,
-             "frenar",frenar,
-             "salto",salto,
-             "caminar",caminar,
-             "parado",parado,
-             "descrementar",descrementar,
-         "aumentar",aumentar,
-             "avanza",avanza,
-             "avanzaI",avanzaI,
-             "saltar",saltar,
-             "derecha",derecha)*/
-        tiempo1=Date.now();
+       
     }
     if(e.keyCode==40){//abajo
-        mario.setCaida(false);
-        e.preventDefault();
+        stop=false;
+        e.preventDefault();audioMundo.play();
     }
     if(e.keyCode==38){//arriba
-        saltar=true;
+        if(!saltar&&!mario.caida){
+            saltar=true;
+        }
     }
-    if(e.keyCode==32){//abajo
+    if(e.keyCode==32){//espacio
         e.preventDefault();
     }
     if(e.keyCode==83){//s
         caminar=false;
     }
     if(e.keyCode==67){//c
-        saltar=true;
+        if(!saltar&&!mario.caida){
+            saltar=true;
+        }
     }
     
     console.log(e.keyCode);
@@ -101,14 +94,14 @@ function mandos2(e){
         e.preventDefault();
     }
     if(e.keyCode==83){
-        mario.setCaminar(true);
-       // caminar=true;
+        
+        caminar=true;
     }
     
 }
 //------------------------animaciones-------------------------//
 
-
+/*
 function aniCoinBox(conCoinBox){
     
         if(conCoinBox==0){
@@ -411,9 +404,9 @@ function marioSalta(c,i){
         return [d+"mps/mps3.png",1000];
     }
 
-}
+}*/
 //---------------------------------Objetos-------------------// 
-
+/*
 class Box{
     constructor(x,y,o) {
         this.img=new Image();
@@ -464,10 +457,11 @@ class Box{
             if(o!==0){
                 if(o==1){
                     if(!this.accion){
+                        
                         r=aniBlock(this.getFrame());
                         this.img.src=r[0];
                         this.setFrame(r[1]);
-                    }else if(!this.inactivo){    
+                    }else if(!this.inactivo){if(this.frame2==0){aTope.play();aBrack.play();   }    
                         r=aniBrakeBlock(this.getFrame2());
                         this.img.src=r[0];
                         this.setFrame2(r[1]);
@@ -485,7 +479,7 @@ class Box{
                         r=aniBox(this.getFrame());
                         this.img.src=r[0];
                         this.setFrame(r[1]); 
-                    }else{
+                    }else{if(this.frame2==0){aMonedBox.play();}
                        if(this.status){    
                             r=aniCoinBox(this.getFrame2());
                             this.img.src=r[0];
@@ -562,7 +556,8 @@ class Bg{
             this.getSrc();
         }
     }
-}
+}*/
+/*
 //----------------------------------Heroe----------------------//
 class Heroe{
     constructor(x,y,e){
@@ -578,6 +573,10 @@ class Heroe{
         this.derecha=true;
         this.saltar=false;
         this.frameSal=0;
+        this.s=21;
+        this.cs=0;
+        this.cc=0;
+        this.sc=16;
         this.setCaminar=(c)=>{
             this.caminar=c;
         }
@@ -604,30 +603,41 @@ class Heroe{
         }
         this.frame2=0;
         this.getSrc=()=>{
-            let r=[];let s=12;
-            if(this.saltar){
+            let r=[];
+            if(this.saltar){this.sc=15,this.cc=0;if(this.frameSal==0){aSaltar.play()}
                 this.frameCaida=0;
                 r=marioSalta(this.frameSal,this.derecha);
                 this.img.src=r[0];
                 this.frameSal=r[1];
-                
-                    this.y-=s;
-                   
-               
-               /* if(this.frameSal==1000){
-                    this.saltar=false;
-                    this.caida=true;
-                }*/
+                if(this.cs==0){
+                    this.y-=this.s;
+                    this.cs++;
+                }else if(this.cs<3){
+                    this.s-=1;
+                    this.y-=this.s;
+                    this.cs++;
+                }else if(this.cs<7){
+                    this.s=15;
+                    this.y-=this.s
+                    this.cs++;
+                }
             }else if(this.caida){
-                this.frameSal=0;
+                this.frameSal=0;this.s=21,this.cs=0;
                 r=marioCaida(this.frameCaida,this.derecha);
                     this.img.src=r[0];
                     this.frameCaida=r[1];                
-                if(s<29){
-                    this.y+=s;
-                    s+=15;
+                if(this.cc==0){
+                    this.cc++;
+                }else if(this.cc<3){
+                    this.y+=this.s;
+                    this.cc++;
+                }else if(this.cc<5){
+                    this.sc+=1;
+                    this.y+=this.sc;
+                    this.cc++;
                 }else{
-                    this.y+=30;
+                    this.sc=21;
+                    this.y+=this.sc;
                 }
             }else{
                 this.frameCaida=0;
@@ -635,7 +645,7 @@ class Heroe{
                     this.frame2=0;
                     r=marioParado(this.frame,this.derecha);
                     this.img.src=r[0];
-                    this.setFrame=r[1];
+                    this.frame=r[1];
                 }else{
                     this.frame=0;
                     if(this.caminar){
@@ -664,7 +674,7 @@ class Heroe{
             return this.y;
         }
         this.pintar=()=>{
-                ctx2.drawImage(this.img,this.getX(),this.getY());
+            ctx2.drawImage(this.img,this.getX(),this.getY());
             this.getSrc();
         }
     }
@@ -679,37 +689,34 @@ for(let y=0;y<bloques.length;y++){
     }
 }
 var bg = [new Bg(0,0,0),new Bg(0,0,1)];
-var mario =new Heroe(72,(360-152),"M");//(360-78)
-
+var mario =new Heroe(72,(336-54),"M");//(360-78)
+*/
 //mario.setCaida(true);
-var act=true;
-var act1=true;
+var start=false;
+var unavez=true;
 //---------------------------------Dibujar--------------------------//
 async function dibujar(){
+    
+    
     if(buttonD){
         descrementar=false;
-        avanzaI=true;
         derecha=true;
         aumentar=true;
         frenar=false;
-        if(!saltar){
-            mario.setCaida(true);       
-        }
+       
     }
     if(buttonI){
         derecha=false;
         aumentar=false;
         descrementar=true;
         frenar=false;
-        if(!saltar){
-            mario.setCaida(true); 
-        }
+
     }
     if(aumentar||descrementar){
         mario.setCaida(true);
         pared=false;
     }
-    
+    ctx2.clearRect(0,0,552,360); 
     for(let y=0;y<cuerpo.length;y++){
         for(let x=0;x<cuerpo[y].length;x++){
             cuerpo[y][x].pintar();
@@ -717,9 +724,9 @@ async function dibujar(){
                 let A =mario;
                 let B = cuerpo[y][x];
                  if(saltar){
-                    if((A.getAnc()-3>B.getX()&&A.getX()+10<B.getAnc()||(A.getX()+3<B.getAnc()&&A.getAnc()-10>B.getAnc()))){                            
-                        if(A.getAlt()-17>B.getAlt()&&A.getY()+1<B.getAlt()){
-                          saltar=false;mario.setSaltar(false); cuerpo[y][x].setAccion();mario.setCaida(true);
+                    if((A.getAnc()-3>B.getX()&&A.getX()+10<B.getAnc()||(A.getX()+3<B.getAnc()&&A.getAnc()-10>B.getAnc()))){
+                        if(A.getAlt()-31>B.getY()&&A.getY()+3<B.getAlt()){
+                            aTope.play(); saltar=false;salto=0;mario.setSaltar(false); cuerpo[y][x].setAccion();mario.setY(B.getY()+22);mario.setCaida(true);
                         }
                     }
                  }
@@ -741,22 +748,19 @@ async function dibujar(){
                 if(mario.caida||!pared){//parar de caer
                     if((A.getAnc()-3>B.getX()&&A.getX()+10<B.getAnc()||(A.getX()+3<B.getAnc()&&A.getAnc()-10>B.getAnc()))){                            
                         if(A.getAlt()>B.getY()-3&&(A.getY()+10)<B.getY()){
-                            mario.setCaida(false);mario.setY(B.getY()-30);
+                         if(mario.caida){aCaida.play(); mario.setCaida(false);};   mario.setY(B.getY()-30);
                         }      
-                }
-            }
-               
-                
+                    }
+                }  
             } 
         }
     }
    
     if(aumentar){//&&avanza
-
         mario.setDerecha(true);
         mario.setParado(false);
         if(mario.getX()<195){
-            if(caminar){mario.setCaminar(true);
+            if(caminar){mario.setCaminar(true);//if(!saltar&&!mario.caida){aCaminar.play();console.log("aqui")};stopMusic(aCorrer);
                 if(camMax<8){
                     mario.sumarX(camMax);
                     if(!frenar){
@@ -764,42 +768,42 @@ async function dibujar(){
                     }
                 }else{
                     if(!frenar){
-                    camMax=8;
+                        camMax=8;
                     }
                     mario.sumarX(camMax);
                 }
-            }else{mario.setCaminar(false);
+            }else{mario.setCaminar(false);//if(!saltar&&!mario.caida){aCorrer.play()};stopMusic(aCaminar);
                 if(camMax<=12){
                     mario.sumarX(camMax);
                     if(!frenar){
-                    camMax+=2;
+                        camMax+=2;
                     }
                 }else{
                     mario.sumarX(camMax);
                 }
             }
         }else{
-            if(caminar){mario.setCaminar(true);
+            if(caminar){mario.setCaminar(true);//if(!saltar&&!mario.caida){aCaminar.play();};stopMusic(aCorrer);
                 if(camMax<8){
                     caminata+=camMax;
                     if(!frenar){
-                    camMax+=2;
+                        camMax+=2;
                     }
                 }else{
                     if(!frenar){
-                    camMax=8
+                        camMax=8
                     }
                    caminata+=camMax;
                 }
-            }else{mario.setCaminar(false);
+            }else{mario.setCaminar(false);//if(!saltar&&!mario.caida){aCorrer.play()};stopMusic(aCaminar);
                 if(camMax<12){
                     caminata+=camMax;
                     if(!frenar){
-                    camMax+=2;
+                        camMax+=2;
                     }
                 }else{
                     if(!frenar){
-                    camMax=12;
+                        camMax=12;
                     }
                     caminata+=camMax;
                 }
@@ -808,53 +812,54 @@ async function dibujar(){
     }
     
     if(descrementar){//&&avanzaI
+
         mario.setDerecha(false);
         mario.setParado(false);
         if(caminata>0){
-            if(caminar){mario.setCaminar(true);
+            if(caminar){mario.setCaminar(true);//if(!saltar&&!mario.caida){aCaminar.play()};stopMusic(aCorrer);
                 if(camMax<8){
                     caminata-=camMax;
                     if(!frenar){
-                    camMax+=2;
+                        camMax+=2;
                     }
                 }else{
                     if(!frenar){
-                    camMax=8
+                        camMax=8
                     }
                    caminata-=camMax;
                 }
-            }else{mario.setCaminar(false);
+            }else{mario.setCaminar(false);//if(!saltar&&!mario.caida){aCorrer.play()};stopMusic(aCaminar);
                 if(camMax<12){
                     caminata-=camMax;
                     if(!frenar){
-                    camMax+=2;
+                        camMax+=2;
                     }
                 }else{
                     if(!frenar){
-                    camMax=12;
+                        camMax=12;
                     }
                     caminata-=camMax;
                 }
             }
         }else{
             if(mario.getX()>1){
-                if(caminar){mario.setCaminar(true);
+                if(caminar){mario.setCaminar(true);//if(!saltar&&!mario.caida){aCaminar.play()};stopMusic(aCorrer);
                     if(camMax<8){
                         mario.restarX(camMax);
                         if(!frenar){
-                        camMax+=2;
+                            camMax+=2;
                         }
                     }else{
                         if(!frenar){
-                        camMax=8;
+                            camMax=8;
                         }
                         mario.restarX(camMax);
                     }
-                }else{mario.setCaminar(false);
+                }else{mario.setCaminar(false);//if(!saltar&&!mario.caida){aCorrer.play()};stopMusic(aCaminar)
                     if(camMax<=10){
                         mario.restarX(camMax);
                         if(!frenar){
-                        camMax+=2;
+                            camMax+=2;
                         }
                     }else{
                         mario.restarX(camMax);
@@ -864,9 +869,8 @@ async function dibujar(){
         }
         
     }
-    if(saltar){
-
-       if(salto<9){
+    if(saltar){//stopMusic(aCaminar);stopMusic(aCorrer);
+       if(salto<8){
            mario.setSaltar(true);
            salto++;
        }else{
@@ -877,23 +881,58 @@ async function dibujar(){
     }
     if(frenar){
         
-        if(camMax<1){
+        if(camMax<1){//stopMusic(aCaminar);stopMusic(aCorrer);
             mario.setParado(true);
             frenar=false;camMax=0;
             descrementar=false;
             aumentar=false;
         }else{
-            camMax--;
-            
+            camMax-=1;
         }
     }
     mario.pintar();
-     ctx.clearRect(0,0,552,360);
+    ctx.clearRect(0,0,552,360);
     for(let i =0;i<bg.length;i++){
          bg[i].pintar();
      }
      ctx.drawImage(canvitas,0,0);
-    ctx2.clearRect(0,0,552,360);  
+     
 }
-console.log("EXITO");
-setInterval(dibujar,80);
+
+
+
+// invento de audio//
+var audioMundo = document.getElementById("aworld");
+var aMonedBox = document.getElementById("moneda");
+var aBrack = document.getElementById("brackBlock");
+var aSaltar = document.getElementById("saltar");
+var aCorrer = document.getElementById("correr");
+var aCaminar = document.getElementById("caminar");
+var aTope = document.getElementById("tope");
+var aGolpe = document.getElementById("golpe");
+var aCaida = document.getElementById("caida");
+
+aCaminar.loop=true;
+aCorrer.loop=true;
+audioMundo.volume=0.3;
+//audioMundo.play();
+audioMundo.addEventListener("play",llama);
+function llama(e){
+    console.log(e);//audioMundo.pause();
+}
+ function stopMusic(a){
+     a.pause();
+     a.currentTime=0;
+ }
+ //button.addEventListener("select",dalePlay);
+ function dalePlay(){console.log('aqui');
+   // audioMundo.pause();
+   // audioMundo.currentTime=0;
+   stopMusic(audioMundo);
+ }
+
+ console.log("EXITO");
+ start= confirm("desea empezar el juego");
+ setInterval(dibujar,70);
+
+  

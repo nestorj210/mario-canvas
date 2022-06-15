@@ -17,10 +17,144 @@
 </head>
 
 <body style="padding: 0px">
-	
+	<audio src="./sound/caminarUltimo.mp3" id="caminar"></audio>
+    <audio src="./sound/correrUltimo.mp3" id="correr"></audio>
+    <audio src="./sound/songtrackmariowav.mp3" id="aworld"></audio>
+    <audio src="./sound/saltar.mp3" id="saltar"></audio>
+    <audio src="./sound/tope.mp3" id="tope"></audio>
+    <audio src="./sound/caida.mp3" id="caida"></audio>
+    <audio src="./sound/brackBlock.mp3" id="brackBlock"></audio>
+    <audio src="./sound/moneda.mp3" id="moneda"></audio>
+    <audio src="./sound/golpe.mp3" id="golpe"></audio>
+
 	<canvas id="myCanvas" width="552" height="360" ></canvas>
     <canvas id="canvitas" width="552" height="360" style="visibility: hidden;"></canvas>
-    <!--<button id="buttonUno">Click</button>-->
-    <script src="game.js"></script>
+    <canvas id="player" width="30" height="360" style="visibility: hidden;"></canvas>
+    <!-- -->
+
+    <!-- cargar imagen bg -->
+    <img src="imagenes/bg/bg-1-1.png" alt="" id="bg1" hidden>
+    <img src="imagenes/bg/bg-1-1-b.png" alt="" id="bg1b" hidden>
+    <img src="imagenes/bg/bg-1-1-c.png" alt="" id="bg1c" hidden>
+    <img src="imagenes/bg/bg 1-1-2.png" alt="" id="bg2" hidden>
+
+
+    <!-- cargar imagen de los bloques -->
+    <img src="imagenes/pipeLeftUp.png" alt="" id="pipeLeftUp"  hidden>
+    <img src="imagenes/pipeRithUp.png" alt="" id="pipeRithUp" hidden>
+    <img src="imagenes/pipeLeftDn.png" alt="" id="pipeLeftDn" hidden>
+    <img src="imagenes/pipeRithDn.png" alt="" id="pipeRithDn" hidden>
+    <img src="imagenes/grama1.png" alt="" id="grama1" hidden>
+    <img src="imagenes/grama2.png" alt="" id="grama2" hidden>
+    <img src="imagenes/grama3.png" alt="" id="grama3" hidden>
+    <img src="imagenes/grama4.png" alt="" id="grama4" hidden>
+    <img src="imagenes/gramaLeft.png" alt="" id="gramaLeft" hidden>
+    <img src="imagenes/gramaRith.png" alt="" id="gramaRith" hidden>
+    <img src="imagenes/arenaLeft.png" alt="" id="arenaLeft" hidden>
+    <img src="imagenes/arenaRith.png" alt="" id="arenaRith" hidden>
+    <img src="imagenes/arena1.png" alt="" id="arena1" hidden>
+    <img src="imagenes/arena2.png" alt="" id="arena2" hidden>
+    <!-- -------------------------------------------------------------- -->
+    <!-- cargar imagenes de animaciones -->
+    <!-- aniBlock -->
+    <img src="imagenes/block brick/block 1.png" alt="" id="block1" hidden>
+    <img src="imagenes/block brick/block 2.png" alt="" id="block2" hidden>
+    <img src="imagenes/block brick/block 3.png" alt="" id="block3" hidden>
+    <img src="imagenes/block brick/block 4.png" alt="" id="block4" hidden>
+    <img src="imagenes/block brick/block 5.png" alt="" id="block5" hidden>
+    <img src="imagenes/block brick/block 6.png" alt="" id="block6" hidden>
+    <img src="imagenes/block brick/block 7.png" alt="" id="block7" hidden>
+
+    <!-- aniBrackBlock -->
+    <img src="imagenes/brakeBlock/brakeBlock-1.png" alt="" id="brakeBlock-1" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-2.png" alt="" id="brakeBlock-2" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-3.png" alt="" id="brakeBlock-3" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-4.png" alt="" id="brakeBlock-4" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-5.png" alt="" id="brakeBlock-5" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-6.png" alt="" id="brakeBlock-6" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-7.png" alt="" id="brakeBlock-7" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-8.png" alt="" id="brakeBlock-8" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-9.png" alt="" id="brakeBlock-9" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-10.png" alt="" id="brakeBlock-10" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-11.png" alt="" id="brakeBlock-11" hidden>
+    <img src="imagenes/brakeBlock/brakeBlock-12.png" alt="" id="brakeBlock-12" hidden>
+
+    <!-- aniBox -->
+    <img src="imagenes/coin animacion/boxCoin 1.png" alt="" id="boxCoin1" hidden>
+    <img src="imagenes/coin animacion/boxCoin 2.png" alt="" id="boxCoin2" hidden>
+    <img src="imagenes/coin animacion/boxCoin 3.png" alt="" id="boxCoin3" hidden>
+    <img src="imagenes/coin animacion/boxCoin 4.png" alt="" id="boxCoin4" hidden>
+    <img src="imagenes/coin animacion/boxCoin 5.png" alt="" id="boxCoin5" hidden>
+    <img src="imagenes/coin animacion/boxCoin 6.png" alt="" id="boxCoin6" hidden>
+    <img src="imagenes/coin animacion/boxCoin 7.png" alt="" id="boxCoin7" hidden>
+    <img src="imagenes/coin animacion/boxCoin 8.png" alt="" id="boxCoin8" hidden>
+    <img src="imagenes/coin animacion/boxCoin 9.png" alt="" id="boxCoin9" hidden>
+    <img src="imagenes/coin animacion/boxCoin 10.png" alt="" id="boxCoin10" hidden>
+    <img src="imagenes/coin animacion/boxCoin 11.png" alt="" id="boxCoin11" hidden>
+    <img src="imagenes/coin animacion/boxCoin 12.png" alt="" id="boxCoin12" hidden>
+    <img src="imagenes/coin animacion/boxCoin 13.png" alt="" id="boxCoin13" hidden>
+    <img src="imagenes/coin animacion/boxCoin 14.png" alt="" id="boxCoin14" hidden>
+    <img src="imagenes/coin animacion/boxCoin 15.png" alt="" id="boxCoin15" hidden>
+    <img src="imagenes/coin animacion/boxCoin 16.png" alt="" id="boxCoin16" hidden>
+    <img src="imagenes/coin animacion/boxCoin 17.png" alt="" id="boxCoin17" hidden>
+    <img src="imagenes/coin animacion/boxCoin 18.png" alt="" id="boxCoin18" hidden>
+    <img src="imagenes/boxEmpty.png" alt="" id="boxEmpty" hidden>
+
+    <!-- coinBox -->
+    <img src="imagenes/coinBox/coinBox-1.png" alt="" id="coinBox1" hidden>
+    <img src="imagenes/coinBox/coinBox-2.png" alt="" id="coinBox2" hidden>
+    <img src="imagenes/coinBox/coinBox-3.png" alt="" id="coinBox3" hidden>
+    <img src="imagenes/coinBox/coinBox-4.png" alt="" id="coinBox4" hidden>
+    <img src="imagenes/coinBox/coinBox-5.png" alt="" id="coinBox5" hidden>
+    <img src="imagenes/coinBox/coinBox-6.png" alt="" id="coinBox6" hidden>
+    <img src="imagenes/coinBox/coinBox-7.png" alt="" id="coinBox7" hidden>
+
+    <!-- litle mario -->
+    <img src="./imagenes/mario/mpp/mpp1.png" alt="" id="mpp1"hidden>
+    <img src="./imagenes/mario/mpp/mpp2.png" alt="" id="mpp2"hidden>
+    <img src="./imagenes/mario/mpp/mpp3.png" alt="" id="mpp3"hidden>
+    <img src="./imagenes/mario/mpp/mpp4.png" alt="" id="mpp4"hidden>
+    <img src="./imagenes/mario/mpp/mpp5.png" alt="" id="mpp5"hidden>
+    <img src="./imagenes/mario/mpp/mpp6.png" alt="" id="mpp6"hidden>
+    <img src="./imagenes/mario/mpp/mpp7.png" alt="" id="mpp7"hidden>
+    <img src="./imagenes/mario/mpp/mpp8.png" alt="" id="mpp8"hidden>
+
+    <img src="./imagenes/mario/mpc/mpc1.png" alt="" id="mpc1"hidden>
+    <img src="./imagenes/mario/mpc/mpc2.png" alt="" id="mpc2"hidden>
+    <img src="./imagenes/mario/mpc/mpc3.png" alt="" id="mpc3"hidden>
+    <img src="./imagenes/mario/mpc/mpc4.png" alt="" id="mpc4"hidden>
+    <img src="./imagenes/mario/mpc/mpc5.png" alt="" id="mpc5"hidden>
+    <img src="./imagenes/mario/mpc/mpc6.png" alt="" id="mpc6"hidden>
+    <img src="./imagenes/mario/mpc/mpc7.png" alt="" id="mpc7"hidden>
+    <img src="./imagenes/mario/mpc/mpc8.png" alt="" id="mpc8"hidden>
+    <img src="./imagenes/mario/mpc/mpc9.png" alt="" id="mpc9"hidden>
+
+    <img src="./imagenes/mario/mpcorre/mpcr-1.png" alt="" id="mpcr1"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-2.png" alt="" id="mpcr2"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-3.png" alt="" id="mpcr3"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-4.png" alt="" id="mpcr4"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-5.png" alt="" id="mpcr5"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-6.png" alt="" id="mpcr6"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-7.png" alt="" id="mpcr7"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-8.png" alt="" id="mpcr8"hidden>
+    <img src="./imagenes/mario/mpcorre/mpcr-9.png" alt="" id="mpcr9"hidden>
+
+    <img src="imagenes/mario/mpb/mpb-2.png" alt="" id="mpb2"hidden>
+    <img src="imagenes/mario/mpb/mpb-3.png" alt="" id="mpb3"hidden>
+    <img src="imagenes/mario/mpb/mpb-4.png" alt="" id="mpb4"hidden>
+
+    <img src="./imagenes/mario/mps/mps1.png" alt="" id="mps1"hidden>
+    <img src="./imagenes/mario/mps/mps2.png" alt="" id="mps2"hidden>
+    <img src="./imagenes/mario/mps/mps3.png" alt="" id="mps3"hidden>
+
+
+
+    <!-- -------------------------------------------------------------- -->
+    <script src="./js/bg.js"></script>
+    <script src="./js/box.js"></script>
+    <script src="./js/cuerpo.js"></script>
+    <script src="./js/heroe.js"></script>
+    <script src="./app/app.js"></script>
+
 </body>
 </html>
