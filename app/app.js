@@ -16,6 +16,10 @@ function startPlay(){
     ctx.fillText("PRESIONE BARRA ESPACIADORA PARA COMENZAR",20,175);
     ctx.closePath();
 }
+
+
+
+
 var start=false;
 var Y=0;
 var X =0;
@@ -393,11 +397,13 @@ if(start){
     startPlay()
 }   
     
-
+ 
 }
 
 
+// listo
 setInterval(draw,80);
+
 function stopMusic(a){
     a.pause();
     a.currentTime=0;
